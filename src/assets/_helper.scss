@@ -1,0 +1,53 @@
+.fw-bold {
+  font-weight: bold;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.decoration-none {
+  text-decoration: none;
+}
+
+$spacings: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20;
+
+@each $spacing in $spacings {
+  .pa-#{$spacing} {
+    padding: #{$spacing}px;
+  }
+  .px-#{$spacing} {
+    padding-right: #{$spacing}px;
+    padding-left: #{$spacing}px;
+  }
+  .py-#{$spacing} {
+    padding-top: #{$spacing}px;
+    padding-bottom: #{$spacing}px;
+  }
+  .pr-#{$spacing} {
+    padding-right: #{$spacing}px;
+  }
+  .pl-#{$spacing} {
+    padding-left: #{$spacing}px;
+  }
+  .pt-#{$spacing} {
+    padding-top: #{$spacing}px;
+  }
+  .pb-#{$spacing} {
+    padding-bottom: #{$spacing}px;
+  }
+  .ga-#{$spacing} {
+    gap: #{$spacing}px;
+  }
+  .my-#{$spacing} {
+    margin-top: #{$spacing}px;
+    margin-bottom: #{$spacing}px;
+  }
+}
